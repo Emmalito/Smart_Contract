@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --openssl-legacy-provider"
+    "test": "mocha --openssl-legacy-provider",
+    "compile": "node compile.js",
+    "deploy": "node deploy.js",
+    "clean": "rm node_modules -r ; rm package-lock.json",
+    "start": "npm install",
+    "execute": "node compile.js && node deploy.js"
+    
   },
   "author": "",
   "license": "ISC",

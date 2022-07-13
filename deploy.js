@@ -20,4 +20,5 @@ const deploy = async() => {
     console.log("Contract deploy on ", receipe.options.address);
     provider.engine.stop(); // To prevent hanging deployment
 };
+
 deploy();
